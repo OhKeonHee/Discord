@@ -1,0 +1,194 @@
+<div data-base="AView" data-class="Setting" class="AView-Style" style="left: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(239, 239, 239);" data-browser-width="1620" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;AFlexLayout&quot;,&quot;ATextField&quot;,&quot;AButton&quot;,&quot;ALabel&quot;,&quot;ATabView&quot;]}" data-browser-height="1391" data-listener-keydown="Setting:onSettingKeydown"
+    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; left: 0px; top: 0px; position: relative;" name="컨테이너"
+        ><div style="position: relative; box-sizing: border-box; flex-grow: 1;"
+            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style chatroom_scroll" style="width: 100%; height: 100%; align-items: stretch; position: relative; left: 0px; top: 0px; background-color: rgb(43, 45, 49); justify-content: flex-end; padding-top: 70px; padding-right: 18px; overflow: auto; padding-left: 18px;" name="사이드영역" data-style="chatroom_scroll"
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="height: 100%; align-items: stretch; position: relative; width: 100%; flex-direction: column; border-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; margin-left: 0px; margin-top: 0px; overflow: visible; padding-bottom: 30px;" name="사이드 메뉴" id="Setting--SideMenu"
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 192px; height: 100%; align-items: center; left: 0px; top: 0px; position: relative; background-color: rgb(30, 31, 34); justify-content: space-between; padding: 5px 12px; gap: 10px; border-radius: 8px;" id="Setting--searchArea"
+                                ><div style="position: relative; box-sizing: border-box; flex-grow: 1;"
+                                    ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style outline" autocomplete="off" style="width: 100%; height: 100%; left: 0px; top: 0px; position: relative; background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); font-size: 16px;" data-style="outline" data-style-focus="outline" id="Setting--searchField" placeholder="검색하기"
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 22px; height: 22px; position: relative; border-radius: 4px; font-size: 14px; background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); cursor: pointer; left: 0px; top: 0px;" id="Setting--searchBtn" data-style="" data-style-over="" data-listener-click="AddFriend:onAddFriendReqBtnClick"
+                                        ><img src="Assets/Imgs/search.svg" style="width: 22px;"
+                                    ></button
+                                ></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(148, 155, 164); font-size: 12px; padding: 6px 10px; margin-top: 20px; font-weight: bold;">사용자 설정</label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer;" data-style="sideBtn" data-style-over="" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_myAccount" data-listener-click="Setting:onSideMenuClick">내 계정</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_profile" data-listener-click="Setting:onSideMenuClick">프로필</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer; margin-left: 0px;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_content" data-listener-click="Setting:onSideMenuClick">콘텐츠 및 소셜</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer; margin-left: 0px;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_data" data-listener-click="Setting:onSideMenuClick">데이터 및 개인정보</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" data-listener-click="Setting:onSideMenuClick" id="Setting--Set_family">가족센터</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_app" data-listener-click="Setting:onSideMenuClick">승인한 앱</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_device" data-listener-click="Setting:onSideMenuClick">기기</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_link" data-listener-click="Setting:onSideMenuClick">연결</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; cursor: pointer; margin-left: 0px;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_clip" data-listener-click="Setting:onSideMenuClick">클립</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: calc(100% - 20px); height: 1px; position: relative; left: 0px; top: 0px; margin: 8px 10px; background-color: rgb(78, 80, 88);"></label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; color: rgb(148, 155, 164); font-size: 12px; padding: 6px 10px; font-weight: bold; left: 0px; top: 0px;">청구 설정</label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_nitro" data-aftertext="true">Nitro
+                                <img src="Assets/Imgs/nitro.png" style="width: 20px; margin: 0px 0px 2px 110px;"
+                            ></button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_server">서버 부스트</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_sub">구독</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; margin-left: 0px; margin-top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_gift">선물 인벤토리</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_claim">청구</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: calc(100% - 20px); height: 1px; position: relative; left: 0px; top: 0px; margin: 8px 10px; background-color: rgb(78, 80, 88);"></label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; color: rgb(148, 155, 164); font-size: 12px; padding: 6px 10px; font-weight: bold; left: 0px; top: 0px;">앱 설정</label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_display">디스플레이</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_access">접근성</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_voice">음성 및 비디오</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; margin-left: 0px; margin-top: 0px; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_chat">채팅</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_alarm">알림</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_key" data-listener-click="Setting:onSideMenuClick">단축키</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_lang" data-listener-click="Setting:onSideMenuClick">언어</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_mode" data-listener-click="Setting:onSideMenuClick">방송 모드</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; margin-left: 0px; margin-top: 0px; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_advance" data-listener-click="Setting:onSideMenuClick">고급</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: calc(100% - 20px); height: 1px; position: relative; margin: 8px 10px; background-color: rgb(78, 80, 88); left: 0px; top: 0px;"></label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; color: rgb(148, 155, 164); font-size: 12px; padding: 6px 10px; font-weight: bold; left: 0px; top: 0px;">활동 설정</label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_personal" data-listener-click="Setting:onSideMenuClick">활동 개인정보</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: calc(100% - 20px); height: 1px; position: relative; margin: 8px 10px; background-color: rgb(78, 80, 88); left: 0px; top: 0px;"></label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_new" data-listener-click="Setting:onNewClick">새로운 기능</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; left: 0px; top: 0px; cursor: pointer; margin-top: 0px;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_goods" data-listener-click="Setting:onGoodsClick">굿즈</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; margin-left: 0px; margin-top: 0px; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--Set_hype" data-listener-click="Setting:onSideMenuClick">HypeSquad</button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: calc(100% - 20px); height: 1px; position: relative; margin: 8px 10px; background-color: rgb(78, 80, 88); left: 0px; top: 0px;"></label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 100%; position: relative; padding: 6px 10px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; text-align: left; border-radius: 4px; font-weight: bold; margin-left: 0px; margin-top: 0px; left: 0px; top: 0px; cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-disable=" sideBtn_clicked" data-style-down=" sideBtn_clicked" id="Setting--logout" data-aftertext="true" data-listener-click="Setting:onLogoutClick">로그아웃
+                                <img src="Assets/Imgs/logout.svg" style="width: 16px; margin: 0px 0px 2px 90px;"
+                            ></button
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: calc(100% - 20px); height: 1px; position: relative; margin: 8px 10px; background-color: rgb(78, 80, 88); left: 0px; top: 0px;"></label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; position: relative; padding: 8px 10px; left: 0px; top: 0px; gap: 8px;" name="소셜버튼" id="Setting--socialBtns"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 16px; height: 16px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" id="Setting--twitter" data-listener-click="Setting:onSocialClick"
+                                        ><img src="Assets/Imgs/social_icon/x-twitter.svg" style="width: 14px; margin: 0px 0px 8px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 16px; height: 16px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0);" id="Setting--instagram" data-listener-click="Setting:onSocialClick"
+                                        ><img src="Assets/Imgs/social_icon/instagram.svg" style="margin: 0px 0px 8px; width: 14px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 16px; height: 16px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" id="Setting--facebook" data-listener-click="Setting:onSocialClick"
+                                        ><img src="Assets/Imgs/social_icon/facebook.svg" style="margin: 0px 0px 8px; width: 14px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 16px; height: 16px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" id="Setting--youtube" data-listener-click="Setting:onSocialClick"
+                                        ><img src="Assets/Imgs/social_icon/youtube.svg" style="margin: 0px 0px 8px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 16px; height: 16px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" id="Setting--tiktok" data-listener-click="Setting:onSocialClick"
+                                        ><img src="Assets/Imgs/social_icon/tiktok.svg" style="width: 12px; margin: 0px 0px 8px;"
+                                    ></button
+                                ></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; padding: 8px 10px; font-size: 12px; color: rgb(181, 186, 193); font-weight: normal;">Stable 367226 (dabb2aa)</label
+                        ></div
+                    ></div
+                ></div
+            ></div
+        ></div
+        ><div style="position: relative; box-sizing: border-box; flex-basis: 75%; flex-grow: 2;"
+            ><div data-base="AView" data-class="AView" class="AView-Style chatroom_scroll" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; background-color: rgb(49, 51, 56); overflow: auto; padding-left: 40px; z-index: 0; backface-visibility: hidden; margin-left: 0px; margin-top: 0px;" name="설정 내용" id="Setting--content" data-style="chatroom_scroll"
+                ><div data-base="ATabView" data-class="ATabView" class="ATabView-Style" data-state="0" style="width: 720px; height: auto; left: 0px; top: 0px; position: relative; overflow: visible; border-color: rgba(0, 0, 0, 0); min-height: 100px;" id="Setting--tabView"
+                    ><div class="tab_area" style="display: none;"
+                        ><span class="ATabView_select">tab1</span
+                        ><span class="ATabView_deselect">tab2</span
+                        ><span class="ATabView_deselect">tab3</span
+                    ></div
+                    ><div class="tab_contents" style="height: 100%;"></div
+                ></div
+                ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: auto; height: auto; align-items: center; top: 60px; position: fixed; flex-direction: column; justify-content: flex-start; gap: 2px; margin-top: 0px; left: 1100px;"
+                    ><div style="position: relative; box-sizing: border-box;"
+                        ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 36px; height: 36px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); border-width: 2px; border-color: rgb(181, 186, 193); border-style: solid; border-radius: 50%; cursor: pointer; background-image: url(&quot;Assets/Imgs/xmark-solid.svg&quot;); background-repeat: no-repeat; background-position: center center; background-size: 16px;" id="Setting--close" data-listener-click="Setting:onCloseClick" data-background-option="custom"></button
+                    ></div
+                    ><div style="position: relative; box-sizing: border-box;"
+                        ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(181, 186, 193); font-size: 13px; font-weight: bold;">ESC</label
+                    ></div
+                ></div
+            ></div
+        ></div
+    ></div
+></div>
