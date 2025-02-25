@@ -1,0 +1,211 @@
+
+.login-hover
+{
+	background-color: #4752c4 !important;
+    transition: .3s !important;
+
+}
+
+.selectBox_option
+{
+    
+}
+.selectBox_option::-webkit-scrollbar {
+    background-color: #2b2d31 !important;
+    width: 5px !important;
+}
+.selectBox_option::-webkit-scrollbar-thumb {
+    background-color: rgb(30, 31, 34) !important;
+    border-radius: 10px !important;
+}
+.selectBox_option > option {
+    background-color: #2b2d31 !important;
+    color: #b5bac1 !important;
+}
+.selectBox_option > option:hover {
+    background-color: #35373c !important;
+    color: #d9dcdf !important;
+}
+
+.friendOptionBtn
+{
+}
+.friendOptionBtn:hover {
+    background-color: #676971 !important;
+    transition: .3s !important;
+}
+
+.msgAreaIcon_hover
+{
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+
+.msgAreaIcon_hover_scale
+{
+    scale: 1.3 !important;
+    transition: .3s !important;
+}
+
+.allProfileBtn
+{
+    background-color: transparent !important;
+    outline: none !important;
+}
+.allProfileBtn:hover {
+    color: #dbdee1 !important;
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.onlineBtn
+{
+    background-color: rgb(67, 68, 75) !important;
+    color: #fff !important;
+    outline: none !important;
+}
+.onlineBtn:hover {
+    background-color: #393c41 !important;
+    color: #f3ffff !important;
+}
+
+.headerBtn
+{
+    background-color: transparent !important;
+    color: rgb(181, 186, 184) !important;
+}
+.headerBtn:hover {
+    background-color: #393c41 !important;
+    color: #dbdee1 !important;
+}
+
+.sideBtn
+{
+    background-color: transparent !important;
+    color: rgb(148, 155, 164) !important;
+}
+.sideBtn:hover {
+    background-color: #35373c !important;
+    color: #dbdee1 !important;
+}
+
+.sideBtn_clicked
+{
+    color: #fff !important;
+    background-color: #404249 !important;
+}
+
+.hover_opacity_1
+{
+    opacity: .8 !important;
+}
+.hover_opacity_1:hover {
+    opacity: 1 !important;
+}
+
+.addFriendReq_hover
+{
+    opacity: .8 !important;
+}
+
+.mailTabBtn
+{
+    border-bottom: '1px solid #949cf7'  !important;
+}
+
+.down_transparent
+{
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.setting_tab_btn_hover
+{
+    color: #dbdee1 !important;
+    border-bottom: 2px solid #5865f2 !important;
+}
+
+.setting_tab_btn_clicked
+{
+    color: #fff !important;
+    border-bottom: 2px solid #949cf7 !important;
+}
+
+.settingBtn_blue
+{
+    background-color: rgb(88, 101, 242) !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    padding: 8px 16px !important;
+    transition: .3s !important;
+    cursor: pointer !important;
+}
+.settingBtn_blue:hover {
+    background-color: #4752c4 !important;
+}
+
+.settingBtn_red
+{
+    background-color: rgb(218, 55, 60) !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    padding: 8px 16px !important;
+    transition: .3s !important;
+}
+.settingBtn_red:hover {
+    background-color: #a12829 !important;
+}
+
+.settingBtn_toRed
+{
+    background-color: transparent !important;
+    color: rgb(255, 255, 221) !important;
+    border-radius: 4px !important;
+    padding: 8px 16px !important;
+    transition: .3s !important;
+    border: 1px solid #da373c !important;
+}
+.settingBtn_toRed:hover {
+    background-color: #da373c !important;
+}
+
+.hover_dark_Link
+{
+    background-color: #202125 !important;
+}
+
+.shortcutKey
+{
+    width: auto !important;
+    height: 23px !important;
+    color: #fff !important;
+    background-color: rgb(57, 60, 65) !important;
+    font-size: 12px !important;
+    border-radius: 4px !important;
+    border: 1px solid #4a4b50 !important;
+    box-shadow: inset 0 -4px 0 #3f4247 !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    padding-bottom: 5px !important;
+}
+
+.shortcutKey_active
+{
+    width: auto !important;
+    height: 19px !important;
+    color: #b5bac1 !important;
+    background-color: transparent !important;
+    font-size: 12px !important;
+    border-radius: 4px !important;
+    border: 1px solid #595b60 !important;
+    box-shadow: inset 0 -4px 0 #3f4247 !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    padding-bottom: 3px !important;
+    transform: translateY(2px) !important;
+}
+

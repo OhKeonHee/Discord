@@ -1,0 +1,96 @@
+<div data-base="AView" data-class="set_Profile_server" class="AView-Style" style="left: 0px; top: 0px; width: 100%; height: 500px; background-color: rgb(49, 51, 56);" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;AFlexLayout&quot;,&quot;ALabel&quot;,&quot;ASelectBox&quot;,&quot;ATextField&quot;,&quot;AImage&quot;,&quot;AButton&quot;]}" data-browser-height="500"
+    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; position: absolute; left: 0px; top: 0px; flex-direction: column; overflow: visible;" name="컨테이너"
+        ><div style="position: relative; box-sizing: border-box;"
+            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; left: 0px; top: 0px; gap: 2px; margin-bottom: 16px;"
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(219, 222, 214); font-size: 14px;">참가 중인 서버마다 다른 프로필을 사용해 자신을 표현해 보세요.</label
+                ></div
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style hover_underline" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(0, 170, 252); font-size: 14px; cursor: pointer;" data-style="hover_underline" data-listener-click="set_Profile_server:onlinkClick">서버 프로필에 대해 자세히 알아보기</label
+                ></div
+            ></div
+        ></div
+        ><div style="position: relative; box-sizing: border-box;"
+            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; flex-direction: column; left: 0px; top: 0px;" name="서버 선택"
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(181, 186, 184); font-size: 12px; font-weight: bold; margin-bottom: 8px;">서버 선택하기</label
+                ></div
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><select data-base="ASelectBox" data-class="ASelectBox" class="ASelectBox-Style outline" style="width: 100%; height: 40px; position: relative; left: 0px; top: 0px; background-color: rgb(30, 31, 34); color: rgb(219, 222, 225); font-size: 16px; border-color: rgba(0, 0, 0, 0); border-radius: 4px;" data-style="outline"
+                        ><option value="value1">item1</option
+                    ></select
+                ></div
+            ></div
+        ></div
+        ><div style="position: relative; box-sizing: border-box;"
+            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: 1px; position: relative; background-color: rgb(63, 65, 71); margin-top: 24px; margin-bottom: 24px; left: 0px; top: 0px;" name="구분선">Label</label
+        ></div
+        ><div style="position: relative; box-sizing: border-box;"
+            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: flex-start; position: relative; left: 0px; top: 0px; gap: 35px; overflow: visible; margin-top: 0px; cursor: pointer;" name="본문"
+                ><div style="position: relative; box-sizing: border-box; flex-basis: 55%;"
+                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; left: 0px; top: 0px; flex-direction: column; overflow: visible;" name="좌"
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; left: 0px; top: 0px; flex-direction: column;" name="별명"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(181, 186, 184); font-size: 12px; font-weight: bold; margin-bottom: 8px;">서버 별명</label
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style outline" autocomplete="off" style="width: 100%; height: auto; position: relative; left: 0px; top: 0px; padding: 10px; border-radius: 4px; background-color: rgb(30, 31, 34); color: rgb(219, 222, 225); font-size: 16px; border-color: rgba(0, 0, 0, 0);" id="set_Profile_server--nicknameTF" data-style="outline" data-listener-change="set_Profile_user:onNicknameTFChange" data-listener-focus="set_Profile_user:onNicknameTFFocus"
+                                ></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: 1px; position: relative; left: 0px; top: 0px; background-color: rgb(63, 65, 71); margin-top: 24px; margin-bottom: 24px;" name="구분선">Label</label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; left: 0px; top: 0px; flex-direction: column;" name="대명사"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(181, 186, 184); font-size: 12px; font-weight: bold; margin-bottom: 8px;">대명사</label
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style outline" autocomplete="off" style="width: 100%; height: auto; position: relative; left: 0px; top: 0px; padding: 10px; border-radius: 4px; background-color: rgb(30, 31, 34); color: rgb(219, 222, 225); font-size: 16px; border-color: rgba(0, 0, 0, 0);" placeholder="대명사를 추가해보세요" data-style="outline" id="set_Profile_server--pronoun" data-listener-change="set_Profile_user:onPronounChange"
+                                ></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: 100%; height: 1px; position: relative; left: 0px; top: 0px; background-color: rgb(63, 65, 71); margin-top: 24px; margin-bottom: 24px;" name="구분선">Label</label
+                        ></div
+                    ></div
+                ></div
+                ><div style="position: relative; box-sizing: border-box; flex-grow: 1;"
+                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 270px; height: auto; align-items: stretch; position: relative; flex-direction: column; overflow: visible; border-radius: 4px;" name="우: 미리보기"
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(181, 186, 184); font-size: 12px; margin-bottom: 8px; font-weight: bold; letter-spacing: 1px;">미리 보기</label
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 100px; position: relative; left: 0px; top: 0px; border-radius: 4px 4px 0px 0px; margin-left: 0px;" name="배경색" id="set_Profile_server--bgCol"></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; left: 0px; top: 0px; position: relative; background-color: rgb(30, 31, 34); overflow: visible; flex-direction: column; padding-left: 16px; padding-right: 16px; padding-bottom: 16px; border-radius: 0px 0px 4px 4px;" name="내용"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: auto; height: auto; align-items: flex-start; position: relative; justify-content: flex-start; overflow: visible; flex-direction: column; left: 0px; top: 0px;"
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><img data-base="AImage" data-class="AImage" class="AImage-Style aimage-blank" style="width: 80px; height: 80px; left: 0px; top: 0px; position: relative; border-radius: 50%; border-width: 8px; border-style: solid; border-color: rgb(30, 31, 34); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;Assets/Imgs/discord-icon.png&quot;); transform: translate(0px, 0px); z-index: 1; background-color: rgb(0, 0, 255); background-size: 40px; margin-top: -40px; margin-left: -5px;" id="set_Profile_server--profileImg" data-background-option="custom"
+                                        ></div
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; left: 0px; position: relative; font-size: 20px; color: rgb(242, 243, 245); top: 0px; margin-top: 0px;" id="set_Profile_server--nickname">Label</label
+                                        ></div
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; font-size: 14px; color: rgb(242, 243, 245); left: 0px; top: 0px;" id="set_Profile_server--username">Label</label
+                                        ></div
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; margin-top: 0px; color: rgb(242, 243, 245); font-size: 14px;" id="set_Profile_server--introduceText">Label</label
+                                        ></div
+                                    ></div
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100%; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgb(78, 80, 88); color: rgb(255, 255, 255); font-size: 14px; border-radius: 4px; margin-left: 0px; margin-top: 8px;">예시 버튼</button
+                                ></div
+                            ></div
+                        ></div
+                    ></div
+                ></div
+            ></div
+        ></div
+    ></div
+></div>
