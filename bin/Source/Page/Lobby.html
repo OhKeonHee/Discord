@@ -1,0 +1,333 @@
+<div data-base="AView" data-class="Lobby" class="AView-Style" style="left: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(49, 51, 56); overflow: hidden; font-size: 14px;" data-browser-width="990" data-class-map="{&quot;afc&quot;:[&quot;AView&quot;,&quot;AFlexLayout&quot;,&quot;AButton&quot;,&quot;ALabel&quot;,&quot;AListView&quot;,&quot;AImage&quot;,&quot;ATextField&quot;,&quot;ATabView&quot;,&quot;ATextBox&quot;]}" id="Lobby--lobby" data-browser-height="672"
+    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; left: 0px; top: 0px; position: relative; margin-left: 0px; place-content: flex-start; flex-flow: row nowrap;"
+        ><div style="position: relative; box-sizing: border-box;"
+            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; position: relative; left: 0px; top: 0px; flex-direction: column; justify-content: space-between; margin-left: 0px; overflow: visible; margin-top: 0px;"
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); overflow: visible; max-height: calc(100vh - 54px);"
+                        ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; flex-direction: column; padding: 10px; gap: 3px; background-color: rgb(43, 45, 49);" name="사이드 버튼"
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100%; height: 42px; position: relative; left: 0px; top: 0px; font-size: 16px; text-align: left; margin-top: 0px; padding-left: 8px; padding-right: 8px; border-radius: 4px; background-color: rgba(0, 0, 0, 0); color: rgb(148, 155, 164); cursor: pointer;" data-style="" data-style-over=" sideBtn" data-style-down="sideBtn sideBtn_clicked" data-style-disable="sideBtn_clicked" id="Lobby--friendBtn" data-listener-click="Lobby:onSideBtnClick" data-check-button="true"
+                                    ><img src="Assets/Imgs/friend.svg" style="width: 24px; margin: 0px 10px 0px 0px;">친구
+                                </button
+                            ></div
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 42px; position: relative; left: 0px; top: 0px; text-align: left; font-size: 16px; padding-left: 8px; padding-right: 8px; border-radius: 4px; background-color: rgba(0, 0, 0, 0); color: rgb(148, 155, 164); margin-top: 0px; cursor: pointer; margin-left: 0px;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-down=" sideBtn" data-style-disable="sideBtn sideBtn_clicked" id="Lobby--NitroBtn" data-listener-click="Lobby:onSideBtnClick"
+                                    ><img src="Assets/Imgs/nitro.png" style="width: 24px; margin: 0px 10px 2px 0px;">Nitro
+                                </button
+                            ></div
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><button data-base="AButton" data-class="AButton" class="AButton-Style sideBtn" style="width: 100%; height: 42px; position: relative; left: 0px; top: 0px; text-align: left; font-size: 16px; padding-left: 8px; padding-right: 8px; border-radius: 4px; background-color: rgba(0, 0, 0, 0); color: rgb(148, 155, 164); cursor: pointer;" data-style=" sideBtn" data-style-over=" sideBtn" data-style-down=" sideBtn" data-style-disable="sideBtn sideBtn_clicked" id="Lobby--storeBtn" data-listener-click="Lobby:onSideBtnClick"
+                                    ><img src="Assets/Imgs/store.svg" style="margin: 0px 10px 0px 0px; width: 24px;">상점
+                                </button
+                            ></div
+                        ></div
+                        ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; background-color: rgb(43, 45, 49); flex-direction: column; min-width: 230px; top: 0px; overflow: hidden;" name="친구목록"
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: auto; height: auto; align-items: center; position: relative; left: 0px; top: 0px; justify-content: space-between; margin: 5px 10px;" data-listener-actionenter="Lobby:onDMAreaEnter" data-listener-actionleave="Lobby:onDMAreaLeave"
+                                    ><div style="position: relative; box-sizing: border-box;"
+                                        ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; color: rgb(146, 153, 162); font-size: 14px; font-weight: bold; left: 0px; top: 0px;" id="Lobby--DMLabel">다이렉트 메시지</label
+                                    ></div
+                                    ><div style="position: relative; box-sizing: border-box;"
+                                        ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 20px; height: 20px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); color: rgb(146, 153, 162); font-weight: bold; cursor: pointer; font-size: 20px; transform: translate(0px, -2px); border-radius: 4px;" id="Lobby--DMPlus" data-style-over=" headerBtn" data-tooltip="DM 생성">+</button
+                                    ></div
+                                ></div
+                            ></div
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><div data-base="AListView" data-class="AListView" class="AListView-Style chatroom_scroll" data-selectable="true" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); padding-left: 10px; padding-right: 10px; margin-left: 0px; overflow: auto; max-height: calc(100vh - 240px); margin-bottom: 20px;" id="Lobby--friendsListView" name="친구목록" item-gap="3px" data-style="chatroom_scroll"
+                                    ><div class="listview-row" style="height: 50px;"></div
+                                    ><div class="listview-row AListView-select" style="height: 50px;"></div
+                                    ><div class="listview-row" style="height: 50px;"></div
+                                    ><div class="listview-row" style="height: 50px;"></div
+                                ></div
+                            ></div
+                        ></div
+                    ></div
+                ></div
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 53px; align-items: center; position: relative; left: 0px; bottom: 0px; padding: 8px; background-color: rgb(35, 36, 40); justify-content: space-between;"
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 115px; height: 100%; align-items: center; position: relative; left: 0px; top: 0px; gap: 10px; padding: 5px; border-radius: 4px; cursor: pointer;" data-style="" data-listener-actionenter="Lobby:onSettingProfileenter" data-listener-actionleave="Lobby:onSettingProfileleave" id="Lobby--settingProfile"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; border-radius: 50%;" id="Lobby--settingProfileImg"
+                                        ><img data-base="AImage" data-class="AImage" class="AImage-Style" style="width: 20px; height: auto; position: absolute; border-radius: 50%; left: calc(50% - 10px); top: calc(50% - 7.5px);" src="Assets/Imgs/discord-icon.png" data-center-x="true" data-center-y="true"
+                                    ></div
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: flex-start; position: relative; left: 0px; top: 0px; flex-direction: column; place-content: flex-start; gap: 0px;"
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style textOver" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; font-size: 16px; color: rgb(242, 243, 245); white-space: nowrap;" id="Lobby--settingProfileNickname" data-style=" textOver">Label</label
+                                        ></div
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); overflow: hidden; height: 14px;"
+                                                ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style textOver transition" style="width: auto; position: relative; font-size: 14px; color: rgb(181, 186, 193); margin-left: 0px; transform: translate(0px, 0px); white-space: nowrap; line-height: 14px; height: 14px; display: block; margin-top: -1px;" id="Lobby--online" data-style="textOver transition">온라인</label
+                                                ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style textOver transition" style="width: auto; height: auto; position: relative; font-size: 14px; color: rgb(181, 186, 193); margin-left: 0px; transform: translate(0px, 0px); white-space: nowrap; display: block; line-height: 14px;" id="Lobby--settingProfileUserName" data-style="textOver transition">id</label
+                                            ></div
+                                        ></div
+                                    ></div
+                                ></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: center; position: relative; left: 0px; top: 0px; justify-content: flex-start;"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; border-radius: 4px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" data-style-over="sideBtn_clicked" id="Lobby--mic" data-listener-click="Lobby:onMicClick" data-tooltip="마이크"
+                                        ><img src="Assets/Imgs/microphone.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; border-radius: 4px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" data-style-over="sideBtn_clicked" data-listener-click="Lobby:onHeadPhoneClick" id="Lobby--headphone" data-tooltip="헤드셋"
+                                        ><img src="Assets/Imgs/headphones.svg" style="width: 22px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 4px;" id="Lobby--settingBtnView" data-listener-actionenter="Lobby:onSettingBtnEnter" data-listener-actionleave="Lobby:onSettingBtnLeave"
+                                        ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100%; height: 100%; position: absolute; border-radius: 4px; background-color: rgba(0, 0, 0, 0); cursor: pointer; left: 0px; top: 0px;" data-style-over="" data-listener-actionenter="Lobby:onSettingEnter" data-style="" id="Lobby--settingBtn" data-listener-actionleave="Lobby:onSettingLeave" data-listener-click="Lobby:onSettingBtnClick" data-tooltip="사용자 설정"
+                                            ><img src="Assets/Imgs/gear.svg" style="width: 22px;"
+                                        ></button
+                                    ></div
+                                ></div
+                            ></div
+                        ></div
+                    ></div
+                ></div
+            ></div
+        ></div
+        ><div style="position: relative; box-sizing: border-box; flex-grow: 1;"
+            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; position: relative; flex-direction: column; place-content: flex-start; left: 0px; top: 0px;"
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 48px; align-items: stretch; position: relative; left: 0px; top: 0px; padding: 8px; justify-content: space-between; border-bottom: 1px solid rgb(41, 43, 47);" name="상단 바" id="Lobby--friendHeader"
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: center; position: relative; left: 0px; top: 0px;"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: 100px; height: auto; position: relative; left: 0px; top: 0px; font-size: 16px; font-weight: bold; background-color: rgba(0, 0, 0, 0); color: rgb(219, 222, 225); margin-left: 0px; margin-right: 8px; padding: 2px 8px; border-right: 1px solid rgb(63, 65, 71); white-space: nowrap;" data-style-down="outline msgAreaIcon_hover"
+                                        ><img src="Assets/Imgs/hand.svg" style="width: 14px; margin: 0px 8px 0px 0px;">친구
+                                    </button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style onlineBtn" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; font-size: 16px; cursor: pointer; color: rgb(255, 255, 255); background-color: rgb(67, 68, 75); border-radius: 3px; margin-left: 8px; padding: 2px 8px; margin-right: 8px; white-space: nowrap;" data-style=" onlineBtn" data-style-over=" onlineBtn" data-style-down=" onlineBtn">온라인</button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style headerBtn" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; font-size: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 184); margin-left: 8px; margin-right: 8px; padding: 2px 8px; white-space: nowrap;" data-style=" headerBtn" data-style-over=" headerBtn" data-style-down=" headerBtn">모두</button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style headerBtn" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; font-size: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 184); margin-left: 8px; margin-right: 8px; padding: 2px 8px; white-space: nowrap;" data-style=" headerBtn" data-style-over=" headerBtn" data-style-down=" headerBtn">대기 중</button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; font-size: 16px; cursor: pointer; color: rgb(255, 255, 255); background-color: rgb(36, 128, 69); border-radius: 3px; padding: 2px 8px; margin-left: 8px; margin-right: 8px; white-space: nowrap;" name="친구추가버튼" id="Lobby--addFriendBtn" data-listener-click="Lobby:onAddFriendBtnClick">친구 추가하기</button
+                                ></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 300px; height: 100%; align-items: center; position: relative; left: 0px; top: 0px; margin-top: 0px; justify-content: flex-end; gap: 10px; padding-right: 8px;"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" data-style-down="outline" data-tooltip="새로운 그룹 메시지"
+                                        ><img src="Assets/Imgs/chat_plus.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" data-listener-click="Lobby:onMailClick" data-style-down="outline" data-tooltip="받은 편지함"
+                                        ><img src="Assets/Imgs/envelope.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); cursor: pointer;" data-listener-click="Lobby:onQuestionClick" data-style-down="outline" data-tooltip="도움말"
+                                        ><img src="Assets/Imgs/circle-question.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                            ></div
+                        ></div
+                    ></div
+                ></div
+                ><div style="position: relative; box-sizing: border-box;"
+                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 48px; align-items: stretch; position: relative; padding: 0px 8px; justify-content: space-between; border-bottom: 1px solid rgb(41, 43, 47); left: 0px; top: 0px; display: none;" name="상단 바" id="Lobby--selectFriendHeader"
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: center; position: relative; left: 0px; top: 0px; gap: 14px; font-size: 16px;"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 24px; height: 24px; position: relative; border-radius: 50%; left: 0px; top: 0px;" id="Lobby--selectFriendImg"
+                                        ><img data-base="AImage" data-class="AImage" class="AImage-Style" style="width: 16px; height: auto; position: absolute; border-radius: 50%; left: calc(50% - 8px); top: calc(50% - 6px);" src="Assets/Imgs/discord-icon.png" data-center-x="true" data-center-y="true"
+                                    ></div
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(214, 217, 220);" id="Lobby--selectFriendName">Label</label
+                                ></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: center; position: relative; left: 0px; top: 0px; justify-content: flex-end; gap: 10px;"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style hover_opacity_1" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); opacity: 0.8; cursor: pointer;" data-style=" hover_opacity_1" data-style-down=" outline" data-style-disable=" outline" name="음성 통화"
+                                        ><img src="Assets/Imgs/phone.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style hover_opacity_1" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); opacity: 0.8; cursor: pointer;" data-style=" hover_opacity_1" data-style-down=" outline" data-style-disable=" outline" name="영상 통화"
+                                        ><img src="Assets/Imgs/video.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style hover_opacity_1" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); opacity: 0.8; transform: rotate(40deg); cursor: pointer;" data-style=" hover_opacity_1" data-style-down=" outline" data-style-disable=" outline" name="고정 메시지"
+                                        ><img src="Assets/Imgs/thumbtack.svg" style="width: 18px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style hover_opacity_1" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); opacity: 0.8; cursor: pointer;" data-style=" hover_opacity_1" data-style-down=" outline" data-style-disable=" outline" name="개인 메시지 친구추가"
+                                        ><img src="Assets/Imgs/user-plus.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style hover_opacity_1" style="width: 32px; height: 32px; position: relative; background-color: rgba(0, 0, 0, 0); opacity: 0.8; cursor: pointer; left: 0px; top: 0px;" data-style=" hover_opacity_1" data-style-down=" outline" data-style-disable=" outline" name="프로필 숨기기" id="Lobby--viewProfile" data-listener-click="Lobby:onViewProfileClick"
+                                        ><img src="Assets/Imgs/viewProfile.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; background-color: rgb(30, 31, 34); border-radius: 4px;" name="메시지 내 검색창"
+                                        ><input data-base="ATextField" data-class="ATextField" type="text" value="" class="ATextField-Style outline" autocomplete="off" style="width: auto; height: 100%; position: relative; background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); border-radius: 4px; top: 0px; margin-top: 0px; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; left: 0px; color: rgb(255, 255, 255);" data-style="outline" data-style-focus="outline" placeholder="검색하기"
+                                        ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: 100%; left: 0px; top: 0px; position: relative; background-color: rgba(0, 0, 0, 0); padding: 2px 5px 5px;"
+                                            ><img src="Assets/Imgs/search.svg" style="width: 16px; margin: 0px 0px 2px;"
+                                        ></button
+                                    ></div
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style hover_opacity_1" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); opacity: 0.8; cursor: pointer;" data-style=" hover_opacity_1" data-style-down=" outline" data-style-disable=" outline" name="받은 편지"
+                                        ><img src="Assets/Imgs/envelope.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><button data-base="AButton" data-class="AButton" class="AButton-Style hover_opacity_1" style="width: 32px; height: 32px; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); opacity: 0.8; cursor: pointer;" data-style=" hover_opacity_1" data-style-down=" outline" data-style-disable=" outline" name="도움말" data-listener-click="Lobby:onQuestionClick"
+                                        ><img src="Assets/Imgs/circle-question.svg" style="width: 24px;"
+                                    ></button
+                                ></div
+                            ></div
+                        ></div
+                    ></div
+                ></div
+                ><div style="position: relative; box-sizing: border-box; flex-grow: 1;"
+                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; position: relative; left: 0px; top: 0px;"
+                        ><div style="position: relative; box-sizing: border-box; flex-grow: 1; flex-basis: auto;"
+                            ><div data-base="ATabView" data-class="ATabView" class="ATabView-Style" data-state="0" style="height: 100%; position: relative; margin-left: 0px; margin-top: 0px; border-color: rgba(0, 0, 0, 0); width: 100%; left: 0px; top: 0px; overflow: hidden;" name="대화창" id="Lobby--tabView"
+                                ><div class="tab_area" style="display: none;"
+                                    ><span class="ATabView_select">tab1</span
+                                    ><span class="ATabView_deselect">tab2</span
+                                    ><span class="ATabView_deselect">tab3</span
+                                ></div
+                                ><div class="tab_contents" style="height: 100%;"></div
+                            ></div
+                        ></div
+                        ><div style="position: relative; box-sizing: border-box;"
+                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style user-select" style="width: 340px; height: 100%; align-items: stretch; position: relative; border-left: 1px solid rgb(63, 65, 71); max-width: 340px; left: 0px; top: 0px;" id="Lobby--friendInfoArea" data-style=" user-select"
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 340px; height: 100%; align-items: stretch; position: relative; background-color: rgb(35, 36, 40); flex-direction: column; left: 0px; top: 0px; display: flex;" name="친구 정보" id="Lobby--selectFriendInfo"
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 100%; height: 120px; left: 0px; top: 0px; position: relative;" name="친구 색" id="Lobby--friendCol"
+                                                ><div data-base="AView" data-class="AView" class="AView-Style" style="height: 90px; position: absolute; top: 50%; left: 12px; border-width: 5px; border-style: solid; border-color: rgb(35, 36, 40); border-radius: 50%; width: 90px; overflow: hidden; cursor: pointer; z-index: 1;" name="프로필이미지" id="Lobby--friendCol_profile" data-style="" data-listener-actionenter="Lobby:onProfileHover" data-listener-actionleave="Lobby:onProfileLeave"
+                                                    ><img data-base="AImage" data-class="AImage" class="AImage-Style aimage-blank" style="width: 90px; height: 90px; left: calc(50% - 45px); top: calc(50% - 45px); position: relative; border-radius: 50%; border-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;Assets/Imgs/discord-icon.png&quot;); background-size: 60%; margin-left: 0px; margin-top: 0px;" id="Lobby--selectFriendProfile" data-background-option="custom" data-center-x="true" data-center-y="true"
+                                                    ><div data-base="AView" data-class="AView" class="AView-Style" style="width: 95px; height: 95px; left: calc(50% - 45px); top: calc(50% - 45px); position: absolute; border-radius: 50%; background-color: rgba(0, 0, 0, 0.5); display: none;" id="Lobby--hoverBackCol" name="마우스 오버 검정배경" data-center-x="true" data-center-y="true"></div
+                                                ></div
+                                            ></div
+                                        ></div
+                                        ><div style="position: relative; box-sizing: border-box; flex-grow: 1;"
+                                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; position: relative; left: 0px; top: 0px; flex-direction: column; padding-left: 20px; padding-top: 55px; padding-right: 20px;" id="Lobby--friendInfo"
+                                                ><div style="position: relative; box-sizing: border-box;"
+                                                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style hover_underline" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(219, 222, 225); font-weight: bold; margin-top: 0px; font-size: 20px; cursor: pointer;" id="Lobby--selectFriendNickname" data-style=" hover_underline" data-listener-click="Lobby:onGoToProfileClick">Label</label
+                                                ></div
+                                                ><div style="position: relative; box-sizing: border-box;"
+                                                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style hover_underline" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(242, 243, 245); font-size: 14px; cursor: pointer;" id="Lobby--selectFriendId" data-style=" hover_underline" data-listener-click="Lobby:onGoToProfileClick">Label</label
+                                                ></div
+                                                ><div style="position: relative; box-sizing: border-box;"
+                                                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style hover_underline" style="width: auto; height: auto; position: relative; color: rgb(242, 243, 245); font-size: 14px; left: 0px; top: 0px;" id="Lobby--selectFriendBirth" data-style=" hover_underline" data-listener-click="Lobby:onGoToProfileClick">Label</label
+                                                ></div
+                                                ><div style="position: relative; box-sizing: border-box;"
+                                                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; left: 0px; top: 0px; flex-direction: column; background-color: rgb(47, 49, 54); border-radius: 8px; gap: 6px; padding: 15px; margin-top: 20px;"
+                                                        ><div style="position: relative; box-sizing: border-box;"
+                                                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(232, 233, 235); font-weight: bold; font-size: 12px;">가입 시기 :</label
+                                                        ></div
+                                                        ><div style="position: relative; box-sizing: border-box;"
+                                                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(198, 201, 204); font-size: 14px;" id="Lobby--selectFriendCreateAt">Label</label
+                                                        ></div
+                                                    ></div
+                                                ></div
+                                            ></div
+                                        ></div
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><button data-base="AButton" data-class="AButton" class="AButton-Style outline allProfileBtn" style="width: 100%; height: 44px; position: relative; left: 0px; top: 0px; font-size: 14px; color: rgb(181, 186, 193); background-color: rgba(0, 0, 0, 0); border-top: 1px solid rgb(52, 53, 57); cursor: pointer;" data-style="outline allProfileBtn" data-style-over=" allProfileBtn" data-style-down=" allProfileBtn" data-style-disable=" allProfileBtn" data-listener-click="Lobby:onGoToProfileClick">전체 프로필 보기</button
+                                        ></div
+                                    ></div
+                                ></div
+                                ><div style="position: relative; box-sizing: border-box;"
+                                    ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 340px; height: 100%; align-items: stretch; position: relative; left: 0px; top: 0px; padding-top: 28px; padding-left: 20px; white-space: nowrap; flex-direction: column; padding-right: 20px; display: none;" id="Lobby--selectFriendInfoNone"
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; font-size: 20px; color: rgb(219, 222, 225); font-weight: bold; white-space: nowrap; left: 0px; top: 0px; margin-bottom: 16px;">현재 활동 중</label
+                                        ></div
+                                        ><div style="position: relative; box-sizing: border-box;"
+                                            ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: center; position: relative; left: 0px; top: 0px; flex-direction: column; place-content: flex-start center; text-align: center; padding-top: 16px; gap: 4px;"
+                                                ><div style="position: relative; box-sizing: border-box;"
+                                                    ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(210, 213, 216); font-weight: bold; font-size: 16px;">지금은 조용하네요...</label
+                                                ></div
+                                                ><div style="position: relative; box-sizing: border-box;"
+                                                    ><pre data-base="ATextBox" data-class="ATextBox" class="ATextBox-Style" style="width: 100%; height: 100%; position: relative; left: 0px; top: 0px; color: rgb(181, 186, 193); white-space: pre-wrap; font-size: 14px;">친구가 게임이나 음성 채팅과 같은 활동을 시작
+하면 여기에 표시돼요!</pre
+                                                ></div
+                                            ></div
+                                        ></div
+                                    ></div
+                                ></div
+                            ></div
+                        ></div
+                    ></div
+                ></div
+            ></div
+        ></div
+        ><div style="position: relative; box-sizing: border-box;"
+            ><div data-base="AView" data-class="AView" class="AView-Style" style="width: auto; height: auto; position: absolute; z-index: 9; border-radius: 8px; border-width: 1px; border-style: solid; border-color: rgb(60, 61, 65); background-color: rgb(43, 45, 49); top: 55px; right: 10px; display: none;" id="Lobby--mailView"
+                ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="height: auto; align-items: stretch; left: 0px; top: 0px; position: relative; flex-direction: column; padding-top: 16px; padding-bottom: 16px; gap: 10px; width: 500px; min-height: 500px; display: flex;"
+                    ><div style="position: relative; box-sizing: border-box;"
+                        ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; left: 0px; top: 0px; padding-left: 16px; padding-right: 16px;"
+                            ><div style="position: relative; box-sizing: border-box; flex-grow: 1;"
+                                ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: auto; align-items: stretch; position: relative; left: 0px; top: 0px; gap: 8px;"
+                                    ><div style="position: relative; box-sizing: border-box;"
+                                        ><img data-base="AImage" data-class="AImage" class="AImage-Style" style="width: 24px; height: 24px; position: relative; left: 0px; top: 0px;" src="Assets/Imgs/envelope.svg"
+                                    ></div
+                                    ><div style="position: relative; box-sizing: border-box;"
+                                        ><label data-base="ALabel" data-class="ALabel" class="ALabel-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; color: rgb(255, 255, 255); font-size: 20px; font-weight: bold;">받은 편지함</label
+                                    ></div
+                                ></div
+                            ></div
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: auto; position: relative; left: 0px; top: 0px; font-size: 12px; padding: 8px; background-color: rgb(30, 31, 34); color: rgb(181, 186, 193); font-weight: bold; border-radius: 8px;"
+                                    ><img src="Assets/Imgs/user-plus.svg" style="width: 14px; margin: 0px 10px 3px 0px;">0
+                                </button
+                            ></div
+                        ></div
+                    ></div
+                    ><div style="position: relative; box-sizing: border-box;"
+                        ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: stretch; position: relative; left: 0px; top: 0px; border-bottom: 1px solid rgb(59, 61, 68);"
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: 100%; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; padding-left: 16px; padding-right: 16px; padding-bottom: 16px; z-index: 1;" data-listener-click="Lobby:onMyAlarmClick" id="Lobby--myAlarmBtn">나의 알림</button
+                            ></div
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: 100%; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; padding-left: 16px; padding-right: 16px; padding-bottom: 16px; z-index: 1;" data-listener-click="Lobby:onNoReadClick" id="Lobby--noReadBtn">읽지 않음</button
+                            ></div
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><button data-base="AButton" data-class="AButton" class="AButton-Style" style="width: auto; height: 100%; position: relative; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0); color: rgb(181, 186, 193); font-size: 16px; padding-left: 16px; padding-right: 16px; padding-bottom: 16px; z-index: 1;" data-listener-click="Lobby:onMensionClick" id="Lobby--mensionBtn">멘션</button
+                            ></div
+                        ></div
+                    ></div
+                    ><div style="position: relative; box-sizing: border-box;"
+                        ><div data-base="AFlexLayout" data-class="AFlexLayout" class="AFlexLayout-Style" style="width: 100%; height: 100%; align-items: center; position: relative; left: 0px; top: 0px; justify-content: center; margin-top: 40px;"
+                            ><div style="position: relative; box-sizing: border-box;"
+                                ><div data-base="ATabView" data-class="ATabView" class="ATabView-Style" data-state="0" style="width: 100%; height: 100%; position: relative; min-width: 300px; min-height: 200px; padding: 16px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px;" id="Lobby--mailTabView"
+                                    ><div class="tab_area" style="display: none;"
+                                        ><span class="ATabView_select">tab1</span
+                                        ><span class="ATabView_deselect">tab2</span
+                                        ><span class="ATabView_deselect">tab3</span
+                                    ></div
+                                    ><div class="tab_contents" style="height: 100%;"></div
+                                ></div
+                            ></div
+                        ></div
+                    ></div
+                ></div
+            ></div
+        ></div
+    ></div
+></div>
