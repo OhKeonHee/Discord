@@ -1,0 +1,17 @@
+
+._global_style_
+{
+	font-size: 18px !important;
+	font-family: Pretendard !important;
+	text-size-adjust: none !important;
+    box-sizing: border-box !important;
+    user-select: none !important;
+    outline: none !important;
+
+}
+
+._global_style_ > * > button {
+    user-select: none !important;
+    outline: none !important;
+}
+

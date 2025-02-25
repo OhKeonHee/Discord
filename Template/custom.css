@@ -1,0 +1,155 @@
+
+.outline
+{
+	outline: none !important;
+
+}
+
+.point_dot
+{
+}
+.point_dot::after {
+    content: '*' !important;
+    color: #fa777b !important;
+    font-size: 12px !important;
+    padding-left: 4px !important;
+}
+
+.hover_underline
+{
+}
+.hover_underline:hover {
+    text-decoration: underline !important;
+    background-color: transparent !important;
+}
+
+.user-select
+{
+    user-select: none !important;
+}
+
+.friendsListItem
+{
+	background-color: rgb(43, 45, 49) !important;
+	color: #949ba4 !important;
+}
+.friendsListItem:hover {
+	background-color: #35373c !important;
+	color: #dbdee1 !important;
+}
+
+.friendsListItem_click
+{
+    background-color: #404249 !important;
+	color: #fff !important;
+}
+
+.textField
+{
+}
+.textField::placeholder {
+    color: #6b6d75 !important;
+}
+
+.chatroom_scroll
+{
+    overflow-x: hidden !important;
+}
+.chatroom_scroll::-webkit-scrollbar {
+    background-color: #2b2d31 !important;
+    width: 10px !important;
+}
+.chatroom_scroll::-webkit-scrollbar-thumb 
+{
+    background-color: #1a1b1e !important;
+    border-radius: 10px !important;
+}
+
+.hover_opacity
+{
+    opacity: 1 !important;
+}
+.hover_opacity:hover {
+    opacity: .6 !important;
+}
+
+.transition
+{
+    transition: .4s !important;
+}
+
+.textOver
+{
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+.nitro_content_back
+{
+	background: radial-gradient(45% 60% at -30% 40%, #70cbff 0%, transparent 100%), radial-gradient(45% 60% at -30% 40%, #172365 0%, transparent 100%) !important;
+}
+
+.nitro_back
+{
+	background: linear-gradient(180deg, #04050c 0%, #19033d 100%) !important;
+}
+
+.nitro2_back
+{
+	background: linear-gradient(180deg, #000 0%, #2a1332 100%) !important; !important;
+}
+
+.nitro3_back
+{
+	background: linear-gradient(180deg, #000 0%, #19033d 100%) !important;
+}
+
+.nitro7_back
+{
+	background: linear-gradient(180deg, #000 0%, #031a3b 100%) !important; !important;
+}
+
+.nitro8_back
+{
+	background: linear-gradient(180deg, #000 0%, #36266d 100%) !important; !important;
+}
+
+.nitro_plan1_back
+{
+	background: linear-gradient(180deg, #000 0%, #031a3b 100%) !important;
+}
+
+.nitro_plan2_back
+{
+	background: linear-gradient(180deg, #000 0%, #36266d 100%) !important;
+}
+
+.nitro_content_back_2
+{
+	background: radial-gradient(45% 60% at -30% 40%, #ff70db 0%, transparent 100%), radial-gradient(45% 60% at -30% 40%, #651744 0%, transparent 100%) !important;
+}
+
+.border_gradiant
+{
+	background: linear-gradient(90deg, #db00a4 0%, #5968f0 100%) !important;
+}
+
+.option
+{
+    cursor: pointer !important;
+}
+.option > option {
+    background-color: #2b2d31 !important;
+    color: #abb0b7 !important;
+    cursor: pointer !important;
+    padding: 12px !important;
+}
+.option > option:hover {
+    background-color: #35373c !important;
+    color: #d6d9dc !important;
+}
+.option > option::selected {
+    background-color: #404249 !important;
+    color: #fafafb !important;
+}
+

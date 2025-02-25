@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DiscordApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	
+	<link rel="stylesheet" href="Framework/afc/style/afc.css">
+	<link rel="stylesheet" href="Framework/afc/style/comp.css">
+	<link rel="stylesheet" href="Framework/afc/style/basicStyle.css">
+	<link rel="stylesheet" href="Framework/afc/style/jquery-ui.css">
+
+	<link rel="stylesheet" href="Template/DiscordApp_global.css">
+	<link rel="stylesheet" href="Template/Pretendard.css">
+	<link rel="stylesheet" href="Template/custom.css">
+	<link rel="stylesheet" href="Template/customBtn.css">
+	<link rel="stylesheet" href="Template/Animation.css">
+
+
+
+	
+	<script>
+	//Electron 과 추가 라이브러리(예, jQuery 등) 와의 충돌 방지
+    //시뮬레이터에서 사용
+	window.nodeRequire = window.require;
+	delete window.require;
+	delete window.exports;
+    delete window.module;
+
+    var theApp = null;
+    var PROJECT_OPTION = {
+    "build": {
+        "bridgeName": "none",
+        "frwLoadOption": "inTimeLoad"
+    },
+    "general": {
+        "autoScale": false,
+        "phoneDocWidth": 0,
+        "tabletDocWidth": 0,
+        "queryFormat": "qry",
+        "scaleVal": 1,
+        "userScalable": false,
+        "tabletMinWidth": 500,
+        "flavor": "common"
+    },
+    "deployment": {
+        "checkVersion": false
+    },
+    "unitUrl": ""
+};
+    
+    document.addEventListener("DOMContentLoaded", () => 
+    {
+		afc.import("Source/DiscordApp.js");
+
+        afc.scriptReady(() =>
+        {
+            if(window._version) _version.setFileVersion();
+            
+            window.theApp = new window["DiscordApp"]();
+            window.theApp.isLoadTheme = false;
+            
+            if(PROJECT_OPTION.unitUrl) window.theApp.unitTest(PROJECT_OPTION.unitUrl);
+            else window.theApp.onReady();
+        });
+    });
+    </script>
+
+	<script defer="" src="lib.js"></script>
+
+
+
+
+		
+	</head>
+	<body class="_global_style_">
+	
+</body></html>
